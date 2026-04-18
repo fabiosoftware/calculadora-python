@@ -37,8 +37,15 @@ def div(a, b):
 
 def executar_calculadora():
     while True:
-        print("\n1-Somar 2-Subtrair 3-Multiplicar 4-Dividir")
-        print("5-Ver Histórico 6-Excluir do Histórico 7-Sair")
+        print("\n===== CALCULADORA =====")
+        print("1 - Somar")
+        print("2 - Subtrair")
+        print("3 - Multiplicar")
+        print("4 - Dividir")
+        print("5 - Ver Histórico")
+        print("6 - Excluir do Histórico")
+        print("7 - Sair")
+        print("=======================")
 
         op = input("Escolha: ")
 
@@ -62,7 +69,7 @@ def executar_calculadora():
                 a = float(input("Número 1: "))
                 b = float(input("Número 2: "))
             except:
-                print("Digite apenas números!")
+                print("Erro: digite apenas números!")
                 continue
 
             if op == "1":
@@ -90,6 +97,5 @@ def executar_calculadora():
             print("Opção inválida!")
 
 
-# ESSA LINHA É A CHAVE
 if __name__ == "__main__":
     executar_calculadora()
